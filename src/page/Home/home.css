@@ -491,11 +491,11 @@ body {
 }
 
 .custom-prev-arrow {
-  left: 20px; /* Left arrow positioning */
+  left: calc(50% - 200px); /* Left arrow positioning */
 }
 
 .custom-next-arrow {
-  right: 20px; /* Right arrow positioning */
+  right: calc(50% - 200px); /* Right arrow positioning */
 }
 
 .custom-arrow:focus {
@@ -539,11 +539,10 @@ body {
   gap: 10%;
 }
 .home-contac-us-form .form-inputs {
-  border: 1px solid black;
   width: 60%;
+  padding: 5% 5%;
 }
 .home-contac-us-form .form-image {
-  border: 1px solid black;
   width: 30%;
   display: flex;
   justify-content: end;
@@ -551,4 +550,91 @@ body {
 }
 .home-contac-us-form .form-image img {
   height: 85%;
+}
+
+/* custom checkbox */
+/* Remove default checkbox styling */
+.home-contac-us-form input[type="checkbox"] {
+  display: none;
+}
+
+/* Create a custom checkmark circle (28px) */
+.home-contac-us-form .custom-checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 40px; /* Space for the checkbox */
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.97px;
+}
+
+/* The actual checkbox circle (28px) */
+.home-contac-us-form .checkmark {
+  width: 28px;
+  height: 28px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+/* When the checkbox is checked, show a 16px green circle inside */
+.home-contac-us-form input[type="checkbox"]:checked + .checkmark::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #b9ff66; /* Green circle */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-contac-us-form .form-checkboxes {
+  display: flex;
+  gap: 50px;
+}
+.home-contac-us-form .from-text-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;;
+}
+.home-contac-us-form .from-text-input label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: black;
+}
+.home-contac-us-form .from-text-input input,
+.home-contac-us-form .from-text-input textArea {
+  border-radius: 14px;
+  border: 1px solid black;
+  outline: none;
+}
+.home-contac-us-form .from-text-input input {
+  padding: 22px;
+  margin-bottom: 3%;
+}
+.home-contac-us-form .from-text-input textArea {
+  padding: 22px;
+  height: 146px;
+}
+.home-contac-us-form .form-submit-button {
+  border-radius: 14px;
+  background-color: #191a23;
+  color: white;
+  width: 100%;
+  padding: 20px 20px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 5%;
 }

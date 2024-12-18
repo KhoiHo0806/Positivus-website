@@ -444,14 +444,43 @@ export const Home = () => {
 
         <form action="" className="home-contac-us-form">
           <div className="form-inputs">
-            <label>
-              <input type="checkbox" name="sayHi" value="newsletter" />{" "}
-              Say Hi
-            </label>
-            <label>
-              <input type="checkbox" name="GetAQuote" value="newsletter" />{" "}
-              Get a Quote
-            </label>
+            <div className="form-checkboxes">
+              <label className="custom-checkbox">
+                <input type="checkbox" name="sayHi" value="newsletter" />
+                <span className="checkmark"></span> Say Hi
+              </label>
+              <label className="custom-checkbox">
+                <input type="checkbox" name="GetAQuote" value="newsletter" />
+                <span className="checkmark"></span> Get a Quote
+              </label>
+            </div>
+            <div className="from-text-input">
+              <label htmlFor="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                className="input-name"
+                placeholder="Name"
+              />
+              <label htmlFor="email">Email*</label>
+              <input
+                type="email"
+                id="email"
+                className="input-email"
+                placeholder="Email"
+                required
+              />
+              <label htmlFor="message">Message*</label>
+              <textarea
+                id="message"
+                className="input-message"
+                placeholder="Message"
+                required
+              />
+            </div>
+            <button type="submit" className="form-submit-button">
+              Send Message
+            </button>
           </div>
           <div className="form-image">
             <img src="Home/contactUsForm/formImage.png" alt="form image" />

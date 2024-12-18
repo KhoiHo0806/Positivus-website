@@ -1,0 +1,114 @@
+.footer-container {
+  margin: 100px 7% 0 7%;
+  background-color: #191a23;
+  border-radius: 45px 45px 0 0;
+  height: 514px;
+  color: white;
+  padding: 5% 5% 0 5%;
+}
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-header .footer-navigation-list {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+.footer-header .navigation-link {
+  color: white;
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.97px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.footer-contact-us {
+  border-bottom: 1px solid white;
+  margin-top: 50px;
+  height: 185px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.footer-contact-us .contact-info-header {
+  background-color: #b9ff66;
+  padding: 0 7px;
+  border-radius: 7px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25.52px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 112px;
+}
+.footer-contact-us .contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.footer-contact-us p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.97px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+}
+.footer-email-form {
+  width: 60%;
+  border-radius: 14px;
+  background-color: #292a32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer-email-form .email-input {
+  padding: 22px 35px;
+  border: 1px solid white;
+  border-radius: 14px;
+  outline: none;
+  background: none;
+  color: white;
+}
+.footer-email-form .email-input::placeholder {
+  color: white;
+}
+.footer-email-form .footer-submit-button {
+  padding: 20px 35px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background-color: #b9ff66;
+  border-radius: 14px;
+}
+.footer-copy-right {
+  height: calc(100% - 5% - 56px - 50px - 185px - 30px);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer-copy-right p {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.footer-copy-right .policy {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
