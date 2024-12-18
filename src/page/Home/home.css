@@ -10,9 +10,6 @@ body {
   font-family: Space Grotesk;
   box-sizing: border-box;
 }
-.home-page-container {
-  margin-top: 50px;
-}
 
 /* intro */
 .home-intro-section {
@@ -20,14 +17,6 @@ body {
   padding: 0 7%;
 }
 
-.home-intro-section .intro-section-text-header {
-  font-size: 60px;
-  font-weight: 500;
-  color: black;
-}
-.home-intro-section .intro-section-text-content {
-  font-size: 20px;
-}
 .home-intro-section .text-and-image {
   display: flex;
   justify-content: space-between;
@@ -44,13 +33,8 @@ body {
 .home-intro-section .intro-section-image {
   height: 100%;
 }
-.home-intro-section .intro-section-text-button {
-  font-size: 20px;
-  padding: 20px 35px;
-  background-color: #191a23;
-  color: white;
-  border: none;
-  border-radius: 14px;
+.home-intro-section .button {
+  text-decoration: none;
 }
 
 .home-brand-logo {
@@ -62,24 +46,9 @@ body {
 .home-services-section {
   margin: 100px 7% 0 7%;
 }
-.home-services-section .services-header {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-.home-services-section .services-header-main-text {
-  background-color: #b9ff66;
-  font-size: 40px;
-  font-weight: 500;
-  padding: 7px;
-  border-radius: 7px;
-  line-height: 51.04px;
-}
-.home-services-section .services-header-sub-text {
-  font-size: 18px;
-  font-weight: 400;
+
+.home-services-section .p-text {
   width: 580px;
-  line-height: 22.97px;
 }
 .home-services-item-list {
   display: grid;
@@ -92,7 +61,7 @@ body {
 .home-services-item {
   height: 310px;
   border-radius: 45px;
-  border-bottom: 5px solid #191a23;
+  border-bottom: 5px solid var(--dark);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,7 +105,7 @@ body {
 
 .home-contact-section {
   margin: 100px 7% 0 7%;
-  background-color: #f3f3f3;
+  background-color: var(--white-smoke);
   border-radius: 45px;
   height: 347px;
   display: flex;
@@ -167,7 +136,7 @@ body {
 }
 .home-contact-left .button {
   width: 55%;
-  background-color: #191a23;
+  background-color: var(--dark);
   color: white;
   border-radius: 14px;
   height: 68px;
@@ -182,28 +151,12 @@ body {
   margin: 100px 7% 0 7%;
 }
 
-.home-case-studies-header {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-.home-case-studies-header .header {
-  background-color: #b9ff66;
-  padding: 7px;
-  border-radius: 7px;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 51.04px;
-}
-.home-case-studies-header .text {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22.97px;
+.home-case-studies-section .p-text {
   width: 580px;
 }
 .home-case-studies-content {
   margin-top: 50px;
-  background-color: #191a23;
+  background-color: var(--dark);
   border-radius: 45px;
   display: flex;
   justify-content: center;
@@ -235,7 +188,7 @@ body {
   align-items: center;
 }
 .home-case-studies-content .learn-more p {
-  color: #b9ff66;
+  color: var(--green);
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -245,24 +198,8 @@ body {
 .home-working-process-section {
   margin: 100px 7% 0 7%;
 }
-.home-working-process-header {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-.home-working-process-section .header {
-  background-color: #b9ff66;
-  padding: 7px;
-  border-radius: 7px;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 51.04px;
-}
-.home-working-process-section .text {
+.home-working-process-section .p-text {
   width: 292px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22.97px;
 }
 .home-woking-process-list {
   margin-top: 50px;
@@ -321,24 +258,9 @@ body {
 .home-team-section {
   margin: 100px 7% 0 7%;
 }
-.home-team-section .team-section-header {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-.home-team-section .header {
-  background-color: #b9ff66;
-  padding: 7px;
-  border-radius: 7px;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 51.04px;
-}
-.home-team-section .text {
+
+.home-team-section .p-text {
   width: 473px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22.97px;
 }
 .home-team-list {
   margin-top: 50px;
@@ -412,7 +334,7 @@ body {
   margin-top: 40px;
   width: 23%;
   height: 68px;
-  background-color: #191a23;
+  background-color: var(--dark);
   color: white;
 }
 
@@ -420,23 +342,8 @@ body {
 .home-testimonials-section {
   margin: 100px 7% 0 7%;
 }
-.home-testimonials-header {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-.home-testimonials-header .header {
-  background-color: #b9ff66;
-  padding: 7px;
-  border-radius: 7px;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 51.04px;
-}
-.home-testimonials-header .text {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22.97px;
+
+.home-testimonials-section .p-text {
   width: 473px;
 }
 .home-testimonials-carousel {
@@ -451,7 +358,7 @@ body {
   display: flex; /* Enable flexbox layout */
   justify-content: center; /* Horizontally center the content */
   align-items: center; /* Vertically center the content */
-  background-color: #191a23;
+  background-color: var(--dark);
   padding-bottom: 30px;
   position: relative;
 }
@@ -474,7 +381,7 @@ body {
 
 /* Custom arrows */
 .custom-arrow {
-  background-color: #191a23;
+  background-color: var(--dark);
   border: none;
   width: 20px;
   height: 20px;
@@ -511,29 +418,14 @@ body {
 .home-contact-us-section {
   margin: 100px 7% 0 7%;
 }
-.home-contact-us-header {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-.home-contact-us-header .header {
-  background-color: #b9ff66;
-  padding: 7px;
-  border-radius: 7px;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 51.04px;
-}
-.home-contact-us-header .text {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22.97px;
+
+.home-contact-us-section .p-text {
   width: 323px;
 }
 .home-contac-us-form {
   margin-top: 50px;
   height: 773px;
-  background-color: #f3f3f3;
+  background-color: var(--white-smoke);
   border-radius: 45px;
   display: flex;
   gap: 10%;
@@ -590,7 +482,7 @@ body {
   content: "";
   width: 16px;
   height: 16px;
-  background-color: #b9ff66; /* Green circle */
+  background-color: var(--green); /* Green circle */
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -605,7 +497,7 @@ body {
 .home-contac-us-form .from-text-input {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;;
+  margin-top: 50px;
 }
 .home-contac-us-form .from-text-input label {
   font-size: 16px;
@@ -629,7 +521,7 @@ body {
 }
 .home-contac-us-form .form-submit-button {
   border-radius: 14px;
-  background-color: #191a23;
+  background-color: var(--dark);
   color: white;
   width: 100%;
   padding: 20px 20px;

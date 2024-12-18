@@ -1,0 +1,23 @@
+.about-us-container{
+    padding: 50px 7% 0 7%;
+}
+.about-us-intro{
+    display: flex;
+    background-color: #F3F3F3;
+    border-radius: 45px;
+    height: 515px;
+    align-items: center;
+}
+.about-us-intro .intro-img{
+    width: 80%;
+    height: 80%;
+    border: 1px solid black;
+}
+.about-us-intro .intro-content{
+    border: 1px solid black;
+    height: 80%;
+    padding-left: 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}

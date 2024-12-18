@@ -169,17 +169,15 @@ export const Home = () => {
       <section className="home-intro-section">
         <div className="text-and-image">
           <div className="intro-section-text">
-            <h1 className="intro-section-text-header">
+            <h1 className="h1-text">
               Navigating the digital landscape for success
             </h1>
-            <p className="intro-section-text-content">
+            <p className="h4-text">
               Our digital marketing agency helps businesses grow and succeed
               online through a range of services including SEO, PPC, social
               media marketing, and content creation.
             </p>
-            <button className="intro-section-text-button">
-              Book a consultation
-            </button>
+            <button className="button">Book a consultation</button>
           </div>
           <img
             src="Home/intro/homeIntroImage.png"
@@ -196,9 +194,9 @@ export const Home = () => {
       />
 
       <section className="home-services-section">
-        <div className="services-header">
-          <h2 className="services-header-main-text">Services</h2>
-          <div className="services-header-sub-text">
+        <div className="section-header-container">
+          <h2 className="section-header">Services</h2>
+          <div className="p-text">
             At our digital marketing agency, we offer a range of services to
             help businesses grow and succeed online. These services include:
           </div>
@@ -250,9 +248,9 @@ export const Home = () => {
       </section>
 
       <section className="home-contact-section">
-        <div className="home-contact-left">
-          <h3 className="title">Let’s make things happen</h3>
-          <p className="text">
+        <div className="section-header-container">
+          <h3 className="section-header">Let’s make things happen</h3>
+          <p className="p-text">
             Contact us today to learn more about how our digital marketing
             services can help your business grow and succeed online.
           </p>
@@ -268,9 +266,9 @@ export const Home = () => {
       </section>
 
       <section className="home-case-studies-section">
-        <div className="home-case-studies-header">
-          <h2 className="header">Case Studies</h2>
-          <p className="text">
+        <div className="section-header-container">
+          <h2 className="section-header">Case Studies</h2>
+          <p className="p-text">
             Explore Real-Life Examples of Our Proven Digital Marketing Success
             through Our Case Studies
           </p>
@@ -294,9 +292,9 @@ export const Home = () => {
       </section>
 
       <section className="home-working-process-section">
-        <div className="home-working-process-header">
-          <h2 className="header">Our Working Process</h2>
-          <p className="text">
+        <div className="section-header-container">
+          <h2 className="section-header">Our Working Process</h2>
+          <p className="p-text">
             Step-by-Step Guide to Achieving Your Business Goals
           </p>
         </div>
@@ -350,9 +348,9 @@ export const Home = () => {
       </section>
 
       <section className="home-team-section">
-        <div className="team-section-header">
-          <h2 className="header">Team</h2>
-          <p className="text">
+        <div className="section-header-container">
+          <h2 className="section-header">Team</h2>
+          <p className="p-text">
             Meet the skilled and experienced team behind our successful digital
             marketing strategies
           </p>
@@ -388,9 +386,9 @@ export const Home = () => {
       </section>
 
       <section className="home-testimonials-section">
-        <div className="home-testimonials-header">
-          <h2 className="header">Testimonials</h2>
-          <p className="text">
+        <div className="section-header-container">
+          <h2 className="section-header">Testimonials</h2>
+          <p className="p-text">
             Hear from Our Satisfied Clients: Read Our Testimonials to Learn More
             about Our Digital Marketing Services
           </p>
@@ -435,9 +433,9 @@ export const Home = () => {
       </section>
 
       <section className="home-contact-us-section">
-        <div className="home-contact-us-header">
-          <h2 className="header">Contact Us</h2>
-          <p className="text">
+        <div className="section-header-container">
+          <h2 className="section-header">Contact Us</h2>
+          <p className="p-text">
             Connect with Us: Let's Discuss Your Digital Marketing Needs
           </p>
         </div>

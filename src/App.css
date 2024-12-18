@@ -6,10 +6,133 @@
 html,
 body,
 #root {
+  font-size: 62.5%;
   height: 100%;
   margin: 0;
   padding: 0;
   overflow: auto; /* Allows the page to scroll if content overflows */
   position: relative;
+  --green: #b9ff66;
+  --dark: #191a23;
+  --light-dark: #292a32;
+  --white-smoke: #f3f3f3;
+  font-family: Space Grotesk;
 }
 
+/* desktop */
+
+.h1-text {
+  font-size: 6rem !important;
+  font-weight: 500;
+  line-height: 7.656rem;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.h2-text {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 5.104rem;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.h3-text {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.828rem;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.h4-text {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.552rem;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.p-text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.297rem;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.section-header-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.section-header {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 5.104rem;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding: 0px 7px;
+  gap: 10px;
+  border-radius: 7px;
+  background-color: var(--green);
+}
+.button {
+  padding: 20px 35px;
+  gap: 10px;
+  border-radius: 14px;
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  background-color: var(--dark);
+  color: white;
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+/* mobile */
+.h1-text-mobile {
+  font-size: 4.3rem;
+  font-weight: 500;
+  line-height: 5.487rem;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.h2-text-mobile {
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 4.594rem;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.h3-text-mobile {
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 3.318rem;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.h4-text-mobile {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.297rem;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.p-text-mobile {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
