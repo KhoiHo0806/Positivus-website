@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  box-sizing: border-box;
+}
+/* index.css or App.css */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto; /* Allows the page to scroll if content overflows */
+  position: relative;
+}
+
