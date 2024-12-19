@@ -1,23 +1,242 @@
-.about-us-container{
-    padding: 50px 7% 0 7%;
+/* about us */
+.about-us-container {
+  padding: 50px 7% 0 7%;
 }
-.about-us-intro{
+.about-us-container .section-header-container {
+  margin-bottom: 50px;
+}
+.about-us-container .h1-text,
+.about-us-container .h2-text,
+.about-us-container .h3-text,
+.about-us-container .h4-text {
+  color: black;
+}
+.about-us-intro {
+  display: flex;
+  background-color: #f3f3f3;
+  border-radius: 45px;
+  height: 515px;
+  align-items: center;
+  padding-left: 5%;
+}
+.about-us-intro .intro-img {
+  width: 50%;
+  height: 80%;
+}
+.about-us-intro .intro-content {
+  height: 80%;
+  padding-left: 7%;
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  width: 50%;
+}
+.about-us-intro .intro-content .h1-text {
+  width: 350px;
+}
+.about-us-intro .intro-content .h4-text {
+  width: 390px;
+}
+
+/* our impact */
+.our-impact-section {
+  margin: 100px 0;
+}
+
+.our-impact-section .p-text {
+  width: 450px;
+}
+.our-impact-section .impact-number-list {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+}
+.our-impact-section .impact-item {
+  border-top: 1px solid black;
+  border-radius: 14px;
+  position: relative;
+  padding: 20px 0 0 20px;
+}
+.our-impact-section .impact-item:first-child {
+  border-top-left-radius: 0;
+}
+.our-impact-section .impact-item:last-child {
+  border-top-right-radius: 0;
+}
+.our-impact-section .impact-item:not(:first-child):before {
+  content: "";
+  position: absolute;
+  width: 1px; /* Border width */
+  height: 20%;
+  background: black;
+}
+
+.our-impact-section .impact-item::before {
+  left: 0; /* Position on the left */
+  top: 9px;
+}
+
+/* journey */
+.our-journey-section {
+  margin-bottom: 100px;
+  position: relative;
+}
+.our-journey-section .p-text {
+  width: 630px;
+}
+.our-journey-section .journey-item-container {
+  display: flex;
+  height: 300px;
+  position: relative;
+}
+.our-journey-section .journey-item-container img {
+  position: absolute;
+  width: 20%;
+  height: 50%;
+}
+.our-journey-section .journey-item-container .image1 {
+  left: 0;
+  margin-left: -8.25%;
+  top: -1%;
+}
+
+.our-journey-section .journey-item-container .image2 {
+  right: 0;
+  transform: rotate(180deg);
+  margin-right: -8.25%;
+  bottom: 12%;
+}
+
+.our-journey-section .journey-item {
+  background-color: var(--dark);
+  width: 40%;
+  border-radius: 45px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10%;
+  padding-left: 9%;
+  padding-right: 20px;
+  position: relative;
+  margin-left: 20px;
+}
+.our-journey-section .journey-item .p-text {
+  width: 100%;
+}
+.our-journey-section .journey-pseudo-item {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  right: 10%;
+  border-radius: 45px;
+}
+.our-journey-section .journey-item-container:nth-child(1) .journey-pseudo-item {
+  bottom: -12.75%;
+  border: 2px solid var(--green);
+  border-top: none;
+  border-right: none;
+  clip-path: inset(0 30% 0 -14px); /* Clips the right half */
+}
+.our-journey-section .journey-item-container:nth-child(1) .journey-pseudo-item .border-hider{
+    background-color: var(--dark);
+    width: 10%;
+    height: 40%;
+    margin-left: -5px;
+}
+.our-journey-section .journey-item-container:nth-child(4) .journey-pseudo-item {
+  top: -13%;
+  border-right: 2px solid var(--green);
+  border-top: 2px solid var(--green);
+  clip-path: inset(0 -14px 0 30%);
+}
+.our-journey-section .journey-item-container:nth-child(4) .journey-pseudo-item .border-hider{
+    background-color: var(--dark);
+    width: 10%;
+    height: 60%;
+    margin-left: -5px;
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+}
+.our-journey-section .journey-item-container:nth-child(2) .journey-pseudo-item {
+  height: 124%;
+  border: 2px solid var(--green);
+  border-left: none;
+  clip-path: inset(0 -14px 0 30%);
+}
+.our-journey-section .journey-item-container:nth-child(3) .journey-pseudo-item {
+  height: 124%;
+  border: 2px solid var(--green);
+  border-right: none;
+  clip-path: inset(0 30% 0 -14px);
+}
+.our-journey-section .journey-pseudo-item img {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+}
+.our-journey-section .journey-pseudo-item .pseudo-icon1 {
+  margin-left: -14px;
+  top: 16%;
+}
+.our-journey-section .journey-pseudo-item .pseudo-icon2,
+.our-journey-section .journey-pseudo-item .pseudo-icon3,
+.our-journey-section .journey-pseudo-item .pseudo-icon4 {
+  top: 33%;
+}
+.our-journey-section .journey-pseudo-item .pseudo-icon2,
+.our-journey-section .journey-pseudo-item .pseudo-icon4 {
+  margin-right: -14px;
+}
+.our-journey-section .journey-pseudo-item .pseudo-icon3 {
+  margin-left: -14px;
+}
+
+
+/* core value */
+.about-us-core-value-section{
+    margin-bottom: 100px;
+}
+.about-us-core-value-section .p-text{
+    width: 300px;
+}
+.about-us-core-value-section .section-header-container{
+    margin-bottom: 50px;
+}
+.about-us-core-value-section .core-value-list{
     display: flex;
-    background-color: #F3F3F3;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+.about-us-core-value-section .core-value-item{
+    width: 42.75%;
+    border: 1px solid black;
+    border-bottom-width: 5px;
+    margin-top: 20px;
     border-radius: 45px;
-    height: 515px;
+    padding: 0 3%;
+    height: 300px;
+    display: flex;
     align-items: center;
 }
-.about-us-intro .intro-img{
-    width: 80%;
-    height: 80%;
-    border: 1px solid black;
+.about-us-core-value-section .core-value-item .core-value-content{
+    height: 100%;
+    width: 100%;
 }
-.about-us-intro .intro-content{
-    border: 1px solid black;
-    height: 80%;
-    padding-left: 7%;
+.about-us-core-value-section .core-value-item .h3-text{
+    height: 40%;
+    width: 100% !important;
+    border-bottom: 1px solid black;
     display: flex;
-    flex-direction: column;
-    gap: 10%;
+    align-items: center;
+}
+.about-us-core-value-section .core-value-item .p-text{
+    width: 100%;
+    height: 60%;
+    margin-top: 20px;
+}
+.about-us-core-value-section .core-value-item img{
+    height: 80%;
+    width: 40%;
 }

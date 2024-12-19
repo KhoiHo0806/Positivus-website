@@ -248,8 +248,8 @@ export const Home = () => {
       </section>
 
       <section className="home-contact-section">
-        <div className="section-header-container">
-          <h3 className="section-header">Let’s make things happen</h3>
+        <div className="home-contact-left">
+          <h3 className="title">Let’s make things happen</h3>
           <p className="p-text">
             Contact us today to learn more about how our digital marketing
             services can help your business grow and succeed online.
@@ -381,7 +381,7 @@ export const Home = () => {
           })}
         </div>
         <div className="home-team-button-container">
-          <button className="home-team-button">See all team</button>
+          <button className="button">See all team</button>
         </div>
       </section>
 

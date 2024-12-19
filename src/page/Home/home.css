@@ -135,11 +135,8 @@ body {
   line-height: 22.97px;
 }
 .home-contact-left .button {
+  text-decoration: none;
   width: 55%;
-  background-color: var(--dark);
-  color: white;
-  border-radius: 14px;
-  height: 68px;
 }
 .home-contact-right {
   height: 394px;
@@ -330,12 +327,10 @@ body {
   display: flex;
   justify-content: end;
 }
-.home-team-button-container .home-team-button {
+.home-team-button-container .button {
   margin-top: 40px;
   width: 23%;
-  height: 68px;
-  background-color: var(--dark);
-  color: white;
+  text-decoration: none;
 }
 
 /* testimonials */
