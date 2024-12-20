@@ -141,3 +141,35 @@
 .testinmonialsSection p {
   width: 473px;
 }
+.homeTestimonialsCarousel {
+  margin-top: 50px;
+}
+
+/* create success story */
+.createSuccessStorySection {
+  background-color: var(--green);
+  border-radius: 45px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+.createSuccessContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  width: 50%;
+  height: 90%;
+  padding: 2.5% 5% 2.5% 5%;
+}
+.createSuccessContent p {
+  width: 70%;
+}
+.createSuccessContent button {
+  width: 60%;
+  text-decoration: none;
+}
+.createSuccessImg {
+  width: 40%;
+  height: 100%;
+}

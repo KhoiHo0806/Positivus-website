@@ -368,7 +368,7 @@ body {
   align-items: center;
   position: absolute;
   gap: 10px;
-  bottom: 10px; /* Controls the distance from the bottom */
+  bottom: 10px !important; /* Controls the distance from the bottom */
   left: 0;
   right: 0;
   z-index: 2;

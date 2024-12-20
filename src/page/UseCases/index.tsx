@@ -1,4 +1,6 @@
 import styles from "./useCase.module.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 export const UseCases = () => {
   const featuredSuccessList = [
@@ -40,6 +42,44 @@ export const UseCases = () => {
         "Through content optimization and targeted keyword strategy, we helped a healthcare provider rank on the first page for critical services, resulting in a 180% increase in inquiries and patient bookings.",
     },
   ];
+
+  const customPrevArrow = (
+    clickHandler: () => void,
+    hasPrev: boolean,
+    label: string
+  ) => (
+    <button
+      type="button"
+      onClick={clickHandler}
+      disabled={!hasPrev} // Disable when no previous slide
+      className={`custom-arrow custom-prev-arrow ${!hasPrev ? "disabled" : ""}`}
+      aria-label={label}
+    >
+      <img src="Home/testimonial/arrowLeftIcon.png" alt="carousel left arow" />
+    </button>
+  );
+
+  const customNextArrow = (
+    clickHandler: () => void,
+    hasNext: boolean,
+    label: string
+  ) => (
+    <button
+      type="button"
+      onClick={clickHandler}
+      disabled={!hasNext} // Disable when no next slide
+      className={`custom-arrow custom-next-arrow ${!hasNext ? "disabled" : ""}`}
+      aria-label={label}
+    >
+      <img
+        src="Home/testimonial/arrowRightIcon.png"
+        alt="carousel right arow"
+      />
+    </button>
+  );
+
+  const dotIcon = "Home/testimonial/dotIcon.png";
+  const dotIconActive = "Home/testimonial/dotIconActive.png";
 
   return (
     <div className={styles.useCasesContainer}>
@@ -124,6 +164,60 @@ export const UseCases = () => {
             about Our Digital Marketing Services
           </p>
         </div>
+
+        <div className={styles.homeTestimonialsCarousel}>
+          <Carousel
+            showThumbs={false}
+            renderArrowPrev={customPrevArrow}
+            renderArrowNext={customNextArrow}
+            renderIndicator={(onClickHandler, isSelected, index) => {
+              const dotStyle = {
+                margin: "0 8px",
+                cursor: "pointer",
+                width: "16px",
+                height: "16px",
+                opacity: isSelected ? 1 : 0.5, // Change opacity for inactive dots
+              };
+
+              return (
+                <img
+                  key={index}
+                  src={isSelected ? dotIconActive : dotIcon}
+                  onClick={onClickHandler}
+                  alt={`Dot ${index + 1}`}
+                  style={dotStyle}
+                  role="button"
+                  aria-label={`Select slide ${index + 1}`}
+                />
+              );
+            }}
+          >
+            {Array.from({ length: 5 }).map((_, i) => (
+              <div key={i}>
+                <img
+                  src="Home/testimonial/carousel.png"
+                  alt={`Slide ${i + 1}`}
+                />
+              </div>
+            ))}
+          </Carousel>
+        </div>
+      </section>
+
+      <section className={styles.createSuccessStorySection}>
+        <div className={styles.createSuccessContent}>
+          <h3 className="h3-text">Let's Create Your Next Success Story</h3>
+          <p className="p-text">
+            Contact us today to learn more about how our digital marketing
+            services can help your business grow and succeed online.
+          </p>
+          <button className="button">Get your free proposal</button>
+        </div>
+        <img
+          src="usecases\createSuccessStoryImg.png"
+          alt="create our success story image "
+          className={styles.createSuccessImg}
+        />
       </section>
     </div>
   );
