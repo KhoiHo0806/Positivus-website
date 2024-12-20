@@ -386,7 +386,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
-  bottom: 10px; /* Align with dots */
+  bottom: 18px; /* Align with dots */
   z-index: 3; /* Ensure arrows are above other elements */
   font-size: 20px;
   padding: 0;

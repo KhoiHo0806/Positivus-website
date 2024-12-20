@@ -61,6 +61,29 @@ export const AboutUs = () => {
     },
   ];
 
+  const awardList = [
+    {
+      name: "Best Small Business Digital Marketing Agency of the Year",
+      content:
+        "Celebrating our success in delivering innovative strategies and measurable results for small business clients.",
+    },
+    {
+      name: "Innovative Website Design",
+      content:
+        "Honoring our expertise in developing visually stunning, user-friendly websites that capture a brand's essence and boost conversions.",
+    },
+    {
+      name: "Top Performing PPC Campaign of the Year",
+      content:
+        "Acknowledging our ability to design and execute a high-impact pay-per-click campaign that drove exceptional client results.",
+    },
+    {
+      name: "Expertise in Social Media Marketing",
+      content:
+        "Recognizing our exceptional skills in crafting effective social media strategies, managing accounts, and creating engaging content.",
+    },
+  ];
+
   return (
     <div className="about-us-container">
       <section className="about-us-intro">
@@ -195,6 +218,62 @@ export const AboutUs = () => {
             );
           })}
         </div>
+      </section>
+
+      <section className="about-us-quote-section">
+        <img
+          src="aboutUs/quoteImg.png"
+          alt="quote image"
+          className="quote-img"
+        />
+        <div className="quote">
+          <h3 className="h3-text">
+            "At Positivus, we believe that success is built on innovation,
+            collaboration, and a relentless focus on delivering results."
+          </h3>
+          <p className="p-text">— John Smith, Founder of Positivus</p>
+        </div>
+      </section>
+
+      <section className="about-us-award-recognition-section">
+        <div className="section-header-container">
+          <h2 className="section-header">Awards & Recognition</h2>
+          <p className="p-text">
+            At Positivus, our commitment to excellence has been recognized by
+            industry leaders. Here are some of our proudest achievements:
+          </p>
+        </div>
+
+        <div className="award-item-list">
+          {awardList.map((item, index) => {
+            return (
+              <div className="award-item" key={index}>
+                <img
+                  src={`aboutUs/awardImg${index + 1}.png`}
+                  alt="award image"
+                  className="award-img"
+                />
+                <div className="award-content">
+                  <h4 className="h4-text">{item.name}</h4>
+                  <p className="p-text">{item.content}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className="join-our-team-section">
+        <div className="join-our-team-content">
+          <h3 className="h3-text">Join Our Team</h3>
+          <p className="p-text">
+            At Positivus, we thrive on innovation and collaboration. We're
+            always looking for passionate individuals to join our team and help
+            businesses grow. Ready to make an impact?
+          </p>
+          <button className="button">Explore Careers</button>
+        </div>
+        <img src="aboutUs/joinOurTeamImg.png" alt="join our team image" className="join-our-team-img" />
       </section>
     </div>
   );
