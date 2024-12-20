@@ -34,6 +34,45 @@ export const Services = () => {
     },
   ];
 
+  const useCasesList = [
+    {
+      name: "E-commerce Fashion Brand",
+      content:
+        "We implemented a tailored SEO strategy that boosted organic search rankings, leading to a 150% increase in website traffic and a 50% rise in online sales within six months.",
+    },
+    {
+      name: "Local Restaurant Chain",
+      content:
+        "By optimizing local SEO and enhancing Google My Business profiles, we increased visibility. driving a 300% boost in online reservations and foot traffic.",
+    },
+    {
+      name: "Healthcare Provider",
+      content:
+        "Through content optimization and targeted keyword strategy, we helped a healthcare provider rank on the first page for critical services, resulting in a 180% increase in inquiries and patient bookings.",
+    },
+  ];
+
+  const otherServiceList = [
+    {
+      name: "Pay-per-click advertising",
+      image: "Home/services/servicesImage2.png",
+    },
+    {
+      name: "Social Media Marketing",
+      image: "Home/services/servicesImage3.png",
+    },
+    { name: "Email Marketing", image: "Home/services/servicesImage4.png" },
+    { name: "Content Creation", image: "Home/services/servicesImage5.png" },
+    {
+      name: "Analytics and Tracking",
+      image: "Home/services/servicesImage6.png",
+    },
+    {
+      name: "Search Engine Optimization",
+      image: "Home/services/servicesImage1.png",
+    },
+  ];
+
   return (
     <div className={styles.serviceContainer}>
       <section className={styles.serviceIntroSection}>
@@ -85,14 +124,103 @@ export const Services = () => {
         </div>
 
         <div className={styles.seoProcessList}>
-            {seoProcessList.map((item,index) =>{
-                return(
-                    <div className={styles.processItem}>
-
-                    </div>
-                )
-            })}
+          {seoProcessList.map((item, index) => {
+            return (
+              <div className={styles.processItem} key={index}>
+                <img
+                  src={`service/seoProcess${index + 1}.png`}
+                  alt="seo process image"
+                  className={styles.itemImage}
+                />
+                <div className={styles.itemContent}>
+                  <h3 className="h3-text">{item.name}</h3>
+                  <p className="p-text">{item.content}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
+      </section>
+
+      <section className={styles.useCaseSection}>
+        <div className="section-header-container">
+          <h2 className="section-header">Use Cases</h2>
+          <p className="p-text">
+            Explore Real-Life Examples of Our Proven Digital Marketing Success
+            through Our Case Studies
+          </p>
+        </div>
+        <div className={styles.useCaseSectionList}>
+          {useCasesList.map((item, index) => {
+            return (
+              <div className={styles.useCaseItem} key={index}>
+                <h3 className="h3-text">{item.name}</h3>
+                <p className="p-text">{item.content}</p>
+                <h4 className="h4-text">
+                  Learn more
+                  <img
+                    src="Home/services/learnMoreIcon1.png"
+                    alt="learn more icon"
+                  />
+                </h4>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className={styles.otherSerivceSection}>
+        <div className="section-header-container">
+          <h2 className="section-header">Our Other Services</h2>
+          <p className="p-text">
+            At our digital marketing agency, we offer a range of services to
+            help businesses grow and succeed online. These services include:
+          </p>
+        </div>
+        <div className={styles.otherServiceList}>
+          {otherServiceList.map((item, index) => {
+            return (
+              <div className={styles.otherServiceItem} key={index}>
+                <div className={styles.itemText}>
+                  <h3 className="h3-text">{item.name}</h3>
+                  <h4 className="h4-text">
+                    <img
+                      src="Home/services/learnMoreIcon1.png"
+                      alt="learn more icon"
+                    />
+                    Learn more
+                  </h4>
+                </div>
+                <img
+                  src={item.image}
+                  alt="service image"
+                  className={styles.itemImg}
+                />
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className={styles.startSeoSection}>
+        <div className={styles.startSeoSectionContent}>
+          <h3 className="h3-text">Ready to Elevate Your Search Rankings?</h3>
+          <p className="p-text">
+            Our proven SEO strategies are designed to help your business achieve
+            long-lasting success in search engines. Whether you want to boost
+            organic traffic, improve keyword rankings, or increase conversions,
+            we're here to make it happen.
+          </p>
+          <h4 className="h4-text">
+            Let's work together to grow your online presence.
+          </h4>
+          <button className="button">Start My SEO Journey</button>
+        </div>
+        <img
+          src="service/startSeoImg.png"
+          alt="section image"
+          className={styles.startSeoSectionImg}
+        />
       </section>
     </div>
   );

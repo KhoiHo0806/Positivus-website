@@ -45,19 +45,150 @@
   width: calc(100% - 60px - 210px - 7% - 5%);
   display: flex;
   flex-direction: column;
-  gap:20px;
+  gap: 20px;
 }
 .serachEngineSection p {
-  color: white;
+  color: var(--white);
 }
 .serachEngineSection button {
-  background-color: white;
+  background-color: var(--white);
   color: var(--dark);
   text-decoration: none;
 }
-.howWeWorkSection{
-    margin: 100px 0;
+.howWeWorkSection {
+  margin: 100px 0;
 }
-.howWeWorkSection p{
-    width: 465px;
-} 
+.howWeWorkSection p {
+  width: 465px;
+}
+.seoProcessList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+}
+.processItem {
+  background-color: var(--white-smoke);
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  gap: 4%;
+  padding: 3%;
+}
+.processItem .itemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.processItem .itemContent p {
+  width: 100%;
+}
+
+/* use cases */
+.useCaseSection {
+  margin-bottom: 100px;
+}
+.useCaseSection p {
+  width: 520px;
+}
+.useCaseSectionList {
+  margin-top: 50px;
+  background-color: var(--dark);
+  border-radius: 45px;
+  display: flex;
+  padding: 5% 0;
+}
+.useCaseItem {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 5%;
+}
+.useCaseItem:nth-child(2) {
+  border: 1px solid var(--white);
+  border-bottom: none;
+  border-top: none;
+}
+.useCaseItem h3,
+.useCaseItem p {
+  color: var(--white);
+  width: 100%;
+}
+.useCaseItem h4 {
+  color: var(--green);
+  display: flex;
+  align-items: center;
+}
+
+/* other service */
+.otherSerivceSection {
+  margin-bottom: 100px;
+}
+.otherSerivceSection p {
+  width: 580px;
+}
+.otherServiceList {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+.otherServiceItem {
+  width: 38%;
+  background-color: var(--white-smoke);
+  border-radius: 45px;
+  margin-bottom: 30px;
+  border-bottom: 5px solid var(--black);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  gap: 10px;
+  padding: 5%;
+}
+.itemText {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.itemText h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.itemImg {
+  padding-left: 20px;
+}
+
+/* start seo */
+.startSeoSection {
+  margin-bottom: 100px;
+  border: 1px solid var(--black);
+  border-radius: 45px;
+  border-bottom-width: 5px;
+  overflow: hidden;
+  display: flex;
+  padding: 5%;
+}
+.startSeoSectionContent {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 30px;
+}
+.startSeoSectionContent h3 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--black);
+}
+.startSeoSectionContent button {
+  text-decoration: none;
+  background-color: var(--green);
+  color: var(--black);
+}
+.startSeoSectionImg {
+  width: 35%;
+  padding-left: 5%;
+}

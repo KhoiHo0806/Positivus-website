@@ -1,0 +1,143 @@
+.useCasesContainer {
+  margin: 100px 7% 100px 7%;
+}
+
+/* intro */
+.introSection {
+  background-color: var(--white-smoke);
+  border-radius: 45px;
+  margin-bottom: 100px;
+  padding: 5%;
+  padding-right: 0;
+  display: flex;
+}
+.introImage {
+  width: 50%;
+}
+.introContent {
+  width: 50%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* feature section */
+.featuredSuccessSection {
+  margin-bottom: 100px;
+  background-color: var(--dark);
+  border-radius: 45px;
+  padding: 5%;
+  display: flex;
+}
+.featureSectionLeft {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.featureSectionLeft h3,
+.featureSectionLeft p {
+  color: var(--white);
+}
+.featureSectionLeft h4 {
+  color: var(--green);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.featureSectionRight {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 0 0 5%;
+  gap: 5%;
+}
+.featuredItem {
+  background-color: var(--white);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+.featuredItem p {
+  text-align: center;
+}
+/* success stories */
+.successStorySection {
+  margin-bottom: 100px;
+}
+.successStorySection p {
+  width: 510px;
+}
+.successStoriesList {
+  border: 1px solid var(--black);
+  border-radius: 45px;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: 1fr 1fr;
+  padding: 5%;
+  margin-top: 50px;
+}
+.successItem {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 10%;
+}
+.successItem h3,
+.successItem p,
+.successItem h4 {
+  width: 100%;
+}
+.successItem h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.successItem:first-child,
+.successItem:nth-child(3) {
+  border: none;
+  padding-top: 0;
+}
+.successItem:first-child {
+  padding-left: 0;
+}
+.successItem:nth-child(2) {
+  border-top: 0;
+  padding-top: 0;
+  border-bottom: none;
+}
+.successItem:nth-child(3) {
+  padding-right: 0;
+}
+.successItem:nth-child(4),
+.successItem:nth-child(6) {
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 0;
+}
+.successItem:nth-child(4) {
+  padding-left: 0;
+}
+.successItem:nth-child(5) {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.successItem:nth-child(6) {
+  padding-right: 0;
+}
+
+/* testinmonial */
+.testinmonialsSection {
+  margin-bottom: 100px;
+}
+.testinmonialsSection p {
+  width: 473px;
+}

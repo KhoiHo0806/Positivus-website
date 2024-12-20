@@ -16,6 +16,8 @@ body,
   --dark: #191a23;
   --light-dark: #292a32;
   --white-smoke: #f3f3f3;
+  --white: white;
+  --black: black;
   font-family: Space Grotesk;
 }
 

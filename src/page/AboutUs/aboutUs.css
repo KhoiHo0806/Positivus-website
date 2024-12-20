@@ -9,11 +9,11 @@
 .about-us-container .h2-text,
 .about-us-container .h3-text,
 .about-us-container .h4-text {
-  color: black;
+  color: var(--black);
 }
 .about-us-intro {
   display: flex;
-  background-color: #f3f3f3;
+  background-color: var(--white-smoke);
   border-radius: 45px;
   height: 515px;
   align-items: center;
@@ -51,7 +51,7 @@
   grid-template-columns: repeat(5, 20%);
 }
 .our-impact-section .impact-item {
-  border-top: 1px solid black;
+  border-top: 1px solid var(--black);
   border-radius: 14px;
   position: relative;
   padding: 20px 0 0 20px;
@@ -67,7 +67,7 @@
   position: absolute;
   width: 1px; /* Border width */
   height: 20%;
-  background: black;
+  background: var(--black);
 }
 
 .our-impact-section .impact-item::before {
@@ -216,7 +216,7 @@
 }
 .about-us-core-value-section .core-value-item {
   width: 42.75%;
-  border: 1px solid black;
+  border: 1px solid var(--black);
   border-bottom-width: 5px;
   margin-top: 20px;
   border-radius: 45px;
@@ -232,7 +232,7 @@
 .about-us-core-value-section .core-value-item .h3-text {
   height: 40%;
   width: 100% !important;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--black);
   display: flex;
   align-items: center;
 }
@@ -266,7 +266,7 @@
 }
 .about-us-quote-section .quote .h3-text,
 .about-us-quote-section .quote .p-text {
-  color: white;
+  color: var(--white);
 }
 
 /* award & recognition */
@@ -309,7 +309,7 @@
   margin-bottom: 100px;
   background-color: var(--green);
   border-radius: 45px;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid var(--black);
   overflow: hidden;
   padding: 5%;
 }
