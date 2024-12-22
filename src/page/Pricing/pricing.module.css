@@ -1,0 +1,74 @@
+.pricingPageContainer {
+  margin: 100px 7% 100px 7%;
+}
+.pricingIntroSection p {
+  width: 450px;
+  margin-top: 10px;
+}
+.inTroPriceList {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.pricingItem {
+  width: 31%;
+  border-radius: 45px;
+  border: 1px solid black;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 20px;
+}
+.pricingItem h2 {
+  display: inline;
+}
+.pricingItemButtons {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  border-bottom: 2px solid black;
+  gap: 20px;
+}
+.pricingItemButtons button {
+  text-decoration: none;
+}
+.pricingItemButtons button:nth-child(2) {
+  background-color: var(--white);
+  color: var(--dark);
+  border: 2px solid var(--dark);
+}
+.pricingItem:nth-child(2) {
+  background-color: var(--dark);
+}
+.pricingItem:nth-child(2) h2,
+.pricingItem:nth-child(2) h3,
+.pricingItem:nth-child(2) p {
+  color: white;
+}
+.pricingItem:nth-child(2) h3{
+    display: flex;
+    justify-content: space-between;
+}
+.pricingItem:nth-child(2) .pricingItemButtons{
+    border-bottom: 2px solid var(--white);
+}
+.pricingItem:nth-child(2) button:first-child {
+  background-color: var(--green);
+  color: var(--dark);
+}
+.pricingItem:nth-child(2) button:nth-child(2) {
+  color: var(--white);
+  background-color: var(--dark);
+  border: 2px solid var(--white);
+}
+.itemFeatureList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.featureItem {
+  display: flex;
+  gap: 10px;
+  align-items: start;
+}
