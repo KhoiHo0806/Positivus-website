@@ -1,6 +1,8 @@
 .pricingPageContainer {
   margin: 100px 7% 100px 7%;
 }
+
+/* intro */
 .pricingIntroSection p {
   width: 450px;
   margin-top: 10px;
@@ -71,4 +73,12 @@
   display: flex;
   gap: 10px;
   align-items: start;
+}
+
+/* question */
+.questionSection{
+    margin: 100px 0;
+}
+.questionSection h2{
+    width: 340px;
 }
