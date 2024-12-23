@@ -1,0 +1,150 @@
+.blogContainer {
+  margin: 100px 7% 100px 7%;
+  box-sizing: border-box;
+}
+.blogIntroSection {
+  border-radius: 45px;
+  background-color: var(--white-smoke);
+  display: flex;
+  padding: 5%;
+}
+.introImg {
+  width: 40%;
+}
+.introContent {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-self: center;
+  gap: 20px;
+  padding-left: 40px;
+}
+.introSticker {
+  align-self: flex-start;
+}
+.authorHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--black);
+  padding: 3%;
+}
+.author {
+  display: flex;
+  gap: 10px;
+}
+.blogContent {
+  margin: 0 15rem;
+}
+.blogGridContainer {
+  margin: 3rem -15rem;
+  display: grid;
+  grid-template-areas:
+    "item1 item1 item1 item2 item2 item2 item2"
+    "item3 item3 item3 item3 item4 item4 item4";
+  gap: 2rem;
+}
+.gridItem {
+  border-radius: 14px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.item1 {
+  grid-area: item1;
+  border: 1px solid var(--black);
+  border-bottom-width: 5px;
+}
+.item2 {
+  grid-area: item2;
+  background-color: var(--green);
+}
+.item3 {
+  grid-area: item3;
+  background-color: var(--white-smoke);
+}
+.item4 {
+  grid-area: item4;
+  background-color: var(--dark);
+}
+.item4 h3,
+.item4 p {
+  color: var(--white);
+}
+.blogContent ul li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.blogIconContainer {
+  text-align: center;
+}
+.exploreSection {
+  margin-top: 100px;
+}
+.exploreSection p {
+  width: 570px;
+}
+
+/* more insights */
+.moreInsightsList {
+  border: 1px solid var(--black);
+  border-radius: 45px;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: 1fr 1fr;
+  padding: 5%;
+  margin-top: 50px;
+}
+
+.insightItem {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 10%;
+}
+.insightItem h3,
+.insightItem p,
+.insightItem h4 {
+  width: 100%;
+}
+.insightItem h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.insightItem:first-child,
+.insightItem:nth-child(3) {
+  border: none;
+  padding-top: 0;
+}
+.insightItem:first-child {
+  padding-left: 0;
+}
+.insightItem:nth-child(2) {
+  border-top: 0;
+  padding-top: 0;
+  border-bottom: none;
+}
+.insightItem:nth-child(3) {
+  padding-right: 0;
+}
+.insightItem:nth-child(4),
+.insightItem:nth-child(6) {
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 0;
+}
+.insightItem:nth-child(4) {
+  padding-left: 0;
+}
+.insightItem:nth-child(5) {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.insightItem:nth-child(6) {
+  padding-right: 0;
+}

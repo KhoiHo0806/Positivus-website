@@ -37,8 +37,27 @@ export const Footer = () => {
             </li>
           </ul>
         </nav>
+
+        <div className="footer-contact-us mobile">
+          <div className="contact-info">
+            <h4 className="contact-info-header">Contact us:</h4>
+            <p className="contac-info">Email: info@positivus.com</p>
+            <p className="contac-info">Phone: 555-567-8901</p>
+            <div>
+              <p className="contac-info">Address: 1234 Main St</p>
+              <p className="contac-info">
+                Moonstone City, Stardust State 12345
+              </p>
+            </div>
+          </div>
+          <form action="" className="footer-email-form">
+            <input type="email" placeholder="Email" className="email-input" />
+            <button className="footer-submit-button">Subscribe to news</button>
+          </form>
+        </div>
+
         <div className="footer-header-icon">
-          <img src="public\Footer\footerIcon.png" alt="footer sociala" />
+          <img src="public\Footer\footerIcon.png" alt="footer social" />
         </div>
       </div>
 
@@ -53,8 +72,8 @@ export const Footer = () => {
           </div>
         </div>
         <form action="" className="footer-email-form">
-            <input type="email" placeholder="Email" className="email-input"/>
-            <button className="footer-submit-button">Subscribe to news</button>
+          <input type="email" placeholder="Email" className="email-input" />
+          <button className="footer-submit-button">Subscribe to news</button>
         </form>
       </div>
 
