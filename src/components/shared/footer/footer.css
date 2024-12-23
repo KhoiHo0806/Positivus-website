@@ -35,6 +35,9 @@
   justify-content: space-between;
   padding-bottom: 50px;
 }
+.footer-contact-us.mobile {
+  display: none;
+}
 .footer-contact-us .contact-info-header {
   background-color: #b9ff66;
   padding: 0 7px;
@@ -186,13 +189,14 @@
   }
   .footer-email-form {
     margin-top: 30px;
-    width: 100%;
+    width: 90%;
     flex-direction: column;
     padding: 20px;
   }
   .footer-email-form .email-input {
     padding: 18px 30px;
-    width: 80%;
+    width: 100%;
+    box-sizing: border-box;
   }
   .footer-email-form .email-input::placeholder {
     color: white;

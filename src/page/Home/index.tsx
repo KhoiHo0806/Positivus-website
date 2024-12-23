@@ -1,5 +1,5 @@
 import "./home.css";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
@@ -172,6 +172,11 @@ export const Home = () => {
             <h1 className="h1-text">
               Navigating the digital landscape for success
             </h1>
+            <img
+              src="Home/intro/homeIntroImage.png"
+              alt="intro image"
+              className="intro-section-image mobile"
+            />
             <p className="h4-text">
               Our digital marketing agency helps businesses grow and succeed
               online through a range of services including SEO, PPC, social
@@ -185,6 +190,11 @@ export const Home = () => {
             className="intro-section-image"
           />
         </div>
+        <img
+          src="Home/intro/brandLogoMobile.png"
+          alt="brand logo"
+          className="home-brand-logo-mobile"
+        />
       </section>
 
       <img
@@ -204,44 +214,76 @@ export const Home = () => {
         <div className="home-services-item-list">
           {servicesItemList.map((item, index) => {
             return (
-              <div
-                className="home-services-item"
-                key={index}
-                style={{ backgroundColor: `${item.background}` }}
-              >
-                <div className="home-services-item-left">
-                  <h3
-                    className="title"
-                    style={{ backgroundColor: `${item.titleBackground}` }}
-                  >
-                    {item.title}
-                  </h3>
-                  <div className="learn-more">
-                    <img
-                      src={`Home/services/learnMoreIcon${
-                        item.background === "#191A23" ? "2" : "1"
-                      }.png`}
-                      alt="learn more icon"
-                    />
-                    <p
-                      style={{
-                        color: `${
-                          item.background === "#191A23" ? "white" : "black"
-                        }`,
-                      }}
+              <>
+                <div
+                  className="home-services-item"
+                  key={index}
+                  style={{ backgroundColor: `${item.background}` }}
+                >
+                  <div className="home-services-item-left">
+                    <h3
+                      className="title"
+                      style={{ backgroundColor: `${item.titleBackground}` }}
                     >
-                      Learn more
-                    </p>
+                      {item.title}
+                    </h3>
+                    <div className="learn-more">
+                      <img
+                        src={`Home/services/learnMoreIcon${
+                          item.background === "#191A23" ? "2" : "1"
+                        }.png`}
+                        alt="learn more icon"
+                      />
+                      <p
+                        style={{
+                          color: `${
+                            item.background === "#191A23" ? "white" : "black"
+                          }`,
+                        }}
+                        className="p-text"
+                      >
+                        Learn more
+                      </p>
+                    </div>
+                  </div>
+                  <div className="home-services-item-right">
+                    <img
+                      style={{ width: "100%", height: "100%" }}
+                      src={`Home/services/servicesImage${index + 1}.png`}
+                      alt="service image"
+                    />
                   </div>
                 </div>
-                <div className="home-services-item-right">
-                  <img
-                    style={{ width: "100%", height: "100%" }}
-                    src={`Home/services/servicesImage${index + 1}.png`}
-                    alt="service image"
-                  />
+                <div
+                  className="home-services-item mobile"
+                  key={index}
+                  style={{ backgroundColor: `${item.background}` }}
+                >
+                  <div className="home-services-item-left">
+                    <h3
+                      className="title"
+                      style={{ backgroundColor: `${item.titleBackground}` }}
+                    >
+                      {item.title}
+                    </h3>
+                  </div>
+                  <div className="home-services-item-right">
+                    <div className="learn-more">
+                      <img
+                        src={`Home/services/learnMoreIcon${
+                          item.background === "#191A23" ? "2" : "1"
+                        }.png`}
+                        alt="learn more icon"
+                      />
+                    </div>
+                    <img
+                      style={{ width: "100%", height: "100%" }}
+                      src={`Home/services/servicesImage${index + 1}.png`}
+                      alt="service image"
+                    />
+                  </div>
                 </div>
-              </div>
+              </>
             );
           })}
         </div>
@@ -312,6 +354,7 @@ export const Home = () => {
                   overflow: "hidden",
                   transition: "height 0.3s ease",
                 }}
+                id="overFlowContainer"
               >
                 <div
                   className="working-process-item"
@@ -484,6 +527,9 @@ export const Home = () => {
             <img src="Home/contactUsForm/formImage.png" alt="form image" />
           </div>
         </form>
+        <button type="submit" className="button">
+          Send Message
+        </button>
       </section>
     </div>
   );

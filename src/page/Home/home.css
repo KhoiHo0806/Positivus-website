@@ -10,7 +10,10 @@ body {
   font-family: Space Grotesk;
   box-sizing: border-box;
 }
-
+.home-page-container {
+  height: auto;
+  overflow: hidden;
+}
 /* intro */
 .home-intro-section {
   height: 515px;
@@ -33,6 +36,9 @@ body {
 .home-intro-section .intro-section-image {
   height: 100%;
 }
+.home-intro-section .intro-section-image.mobile {
+  display: none;
+}
 .home-intro-section .button {
   text-decoration: none;
 }
@@ -40,6 +46,9 @@ body {
 .home-brand-logo {
   margin-top: 50px;
   width: 100%;
+}
+.home-brand-logo-mobile {
+  display: none;
 }
 
 /* services */
@@ -67,6 +76,9 @@ body {
   align-items: center;
   gap: 5%;
   padding: 0 10px;
+}
+.home-services-item.mobile {
+  display: none;
 }
 .home-services-item-left,
 .home-services-item-right {
@@ -524,4 +536,377 @@ body {
   font-weight: 400;
   line-height: 28px;
   margin-top: 5%;
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+    box-sizing: border-box;
+  }
+
+  /* intro */
+  .home-intro-section {
+    height: auto;
+    position: relative;
+  }
+  .home-intro-section .text-and-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .intro-section-image {
+    display: none;
+  }
+  .home-intro-section .intro-section-image.mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .home-intro-section .intro-section-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+  }
+  .home-intro-section .button {
+    width: 100%;
+  }
+  .home-brand-logo {
+    display: none;
+  }
+  .home-brand-logo-mobile {
+    display: block;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+  }
+
+  /* service */
+  .home-services-section {
+    margin: 200px 7% 0 7%;
+  }
+  .home-services-section .p-text {
+    width: 100%;
+    text-align: center;
+  }
+  .home-services-item {
+    display: none;
+  }
+  .home-services-item.mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .home-services-item-list {
+    grid-template-columns: 1fr;
+  }
+  .home-services-item {
+    height: auto;
+    gap: 5%;
+    padding: 10%;
+  }
+  .home-services-item-left,
+  .home-services-item-right {
+    width: 100%;
+    height: auto;
+  }
+  .home-services-item-left {
+    display: flex;
+    justify-content: start;
+    width: auto;
+  }
+  .home-services-item-left .title {
+    color: var(--black);
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  .home-services-item-right {
+    display: flex;
+    height: auto;
+    width: 100%;
+  }
+  .home-services-item-right .learn-more,
+  .home-services-item-right img {
+    width: 50% !important;
+  }
+  .home-services-item-right .learn-more {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+  }
+  .home-services-item-right .learn-more img {
+    width: 40px !important;
+    height: 40px;
+  }
+
+  /* contact */
+  .home-contact-section {
+    height: auto;
+    display: flex;
+    justify-content: start;
+    padding: 10%;
+  }
+  .home-contact-left {
+    width: 100%;
+  }
+  .home-contact-right {
+    display: none;
+  }
+  .home-contact-left .button {
+    text-decoration: none;
+    width: 100%;
+  }
+
+  /* case studies */
+  .home-case-studies-section .p-text {
+    width: auto;
+  }
+  .home-case-studies-content {
+    background-color: white;
+    border-radius: 0;
+    justify-content: start;
+    align-items: start;
+    height: auto;
+    width: 100%;
+    padding-left: 0;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+  }
+  .home-case-studies-content .caseStudy-item:not(:first-child) {
+    border-left: none;
+    padding-left: 10%;
+  }
+  .home-case-studies-content .caseStudy-item {
+    background-color: var(--dark);
+    flex: 0 0 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    scroll-snap-align: start; /* Snap items into view */
+    box-sizing: border-box;
+    padding: 10%;
+    border-radius: 45px;
+  }
+  .home-case-studies-content .case-study-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.97px;
+    color: var(--white);
+  }
+  .home-case-studies-content .learn-more {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .home-case-studies-content .learn-more p {
+    color: var(--green);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  /* working process */
+  .home-working-process-section .p-text {
+    width: 100%;
+    text-align: center;
+  }
+  .home-woking-process-list {
+    gap: 20px;
+  }
+  .home-woking-process-list .working-process-item {
+    padding: 0px 20px;
+    box-sizing: border-box;
+  }
+
+  .home-woking-process-list .item-index {
+    font-size: 30px;
+    line-height: 76.56px;
+  }
+  .home-woking-process-list .item-header {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+  .home-woking-process-list .working-process-item-upper img {
+    width: 35px;
+    height: 35px;
+  }
+  .home-woking-process-list .working-process-item-lower {
+    box-sizing: border-box;
+    font-size: 16px;
+    overflow: auto;
+    padding-top: 20px;
+  }
+
+  /* team */
+  .home-team-section .p-text {
+    width: 100%;
+    text-align: center;
+  }
+  .home-team-list {
+    gap: 20px;
+    justify-content: center;
+  }
+  .home-team-list .team-list-item {
+    width: 100%;
+    height: auto;
+    padding: 7% 0;
+  }
+  .home-team-list .team-list-item-upper {
+    padding-bottom: 15px;
+  }
+  .home-team-list .team-list-item-upper .pfp {
+    width: 90px;
+    height: 90px;
+  }
+  .home-team-list .team-list-item-upper .icon {
+    top: calc(100% - 90px - 15px);
+  }
+  .home-team-list .name-and-position .name {
+    font-size: 18px;
+  }
+  .home-team-list .name-and-position .position {
+    font-size: 16px;
+  }
+  .home-team-section .team-list-item-lower {
+    padding-top: 15px;
+    font-size: 16px;
+  }
+  
+  .home-team-button-container .button { 
+    width: 100%;
+  }
+
+  /* testinmonial */
+  .home-testimonials-section .p-text {
+    width: 100%;
+    text-align: center;
+  }
+  .carousel {
+    height: auto; /* Set the height for the entire carousel */
+    padding-bottom: 20%;
+  }
+  
+  .carousel .slide img {
+    height: 220px; /* Make images fill the height */
+    padding-top: 20px ;
+    object-fit: cover; /* Adjust image behavior (e.g., cover, contain, etc.) */
+  }
+  
+  /* Custom arrows */
+  .custom-prev-arrow {
+    left: calc(50% - 150px); /* Left arrow positioning */
+  }
+  
+  .custom-next-arrow {
+    right: calc(50% - 150px); /* Right arrow positioning */
+  }
+
+  /* contact us */
+  .home-contact-us-section .p-text {
+    width: 100%;
+    text-align: center;
+  }
+  .home-contac-us-form {
+    padding: 10%;
+    height: auto;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-contac-us-form .form-inputs {
+    width: 100%;
+    padding: 0;
+  }
+  .home-contac-us-form .form-image {
+    display: none;
+  }
+  .home-contac-us-form .form-submit-button{
+    display: none;
+  }
+  .home-contact-us-section button{
+    margin-top: 20px;
+    width: 100%;
+    text-decoration: none;
+  }
+  .home-contac-us-form .custom-checkbox {
+    font-size: 16px;
+  }
+  
+
+  .home-contac-us-form .checkmark {
+    width: 23px;
+    height: 23px;
+  }
+  .home-contac-us-form input[type="checkbox"]:checked + .checkmark::after {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .home-contac-us-form .from-text-input {
+    margin-top: 30px;
+  }
+  .home-contac-us-form .from-text-input input {
+    padding: 15px;
+    margin-bottom: 7%;
+  }
+  .home-contac-us-form .from-text-input textArea {
+    padding: 15px;
+    height: 80px;
+  }
+  .home-contac-us-form .form-submit-button {
+    border-radius: 14px;
+    background-color: var(--dark);
+    color: var(--white);
+    width: 100%;
+    padding: 20px 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 40%;
+  }
+  .home-services-item-right .learn-more img {
+    width: 30px !important;
+    height: 30px;
+  }
+  .home-woking-process-list .item-index {
+    font-size: 20px;
+    line-height: 70px;
+  }
+  .home-woking-process-list .working-process-item-lower {
+    padding-top: 50px;
+  }
+  .home-team-list .name-and-position .name {
+    font-size: 15px;
+  }
+  .home-team-list .name-and-position .position {
+    font-size: 14px;
+  }
+  /* Custom arrows */
+  .custom-prev-arrow {
+    left: calc(50% - 125px); /* Left arrow positioning */
+  }
+  
+  .custom-next-arrow {
+    right: calc(50% - 125px); /* Right arrow positioning */
+  }
+  .carousel .slide img {
+    height: 180px; /* Make images fill the height */
+
+  }
 }

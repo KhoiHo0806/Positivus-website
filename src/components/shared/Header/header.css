@@ -111,8 +111,8 @@
     gap: 10px;
     padding: 0;
   }
-  
-  .hamburger-menu-x-button{
+
+  .hamburger-menu-x-button {
     font-size: 30px;
     text-align: end;
     padding-right: 10px;
@@ -121,7 +121,5 @@
     height: auto;
     width: auto;
     margin-top: 10px;
-    
   }
-  
 }
