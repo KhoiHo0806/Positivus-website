@@ -539,10 +539,7 @@ body {
 }
 
 @media (max-width: 500px) {
-  html {
-    font-size: 50%;
-    box-sizing: border-box;
-  }
+  
 
   /* intro */
   .home-intro-section {
@@ -648,6 +645,7 @@ body {
 
   /* contact */
   .home-contact-section {
+    margin-top: 50px;
     height: auto;
     display: flex;
     justify-content: start;
@@ -665,6 +663,9 @@ body {
   }
 
   /* case studies */
+  .home-case-studies-section{
+    margin-top: 50px;
+  }
   .home-case-studies-section .p-text {
     width: auto;
   }
@@ -715,6 +716,9 @@ body {
   }
 
   /* working process */
+  .home-working-process-section{
+    margin-top: 50px;
+  }
   .home-working-process-section .p-text {
     width: 100%;
     text-align: center;
@@ -748,6 +752,9 @@ body {
   }
 
   /* team */
+  .home-team-section{
+    margin-top: 50px;
+  }
   .home-team-section .p-text {
     width: 100%;
     text-align: center;
@@ -787,6 +794,9 @@ body {
   }
 
   /* testinmonial */
+  .home-testimonials-section{
+    margin-top: 50px;
+  }
   .home-testimonials-section .p-text {
     width: 100%;
     text-align: center;
@@ -812,6 +822,9 @@ body {
   }
 
   /* contact us */
+  .home-contact-us-section{
+    margin-top: 50px;
+  }
   .home-contact-us-section .p-text {
     width: 100%;
     text-align: center;

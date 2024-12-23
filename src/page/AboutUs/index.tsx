@@ -94,6 +94,11 @@ export const AboutUs = () => {
         />
         <div className="intro-content">
           <h1 className="h1-text">Together for Success</h1>
+          <img
+            src="aboutUs/introMobileImg.png"
+            alt="intro image"
+            className="intro-img mobile"
+          />
           <p className="h4-text">
             At Positivus, we help businesses grow by combining creativity,
             innovation, and data- driven strategies. Together, we build a future
@@ -182,6 +187,33 @@ export const AboutUs = () => {
             );
           })}
         </div>
+        {/* 
+        mobile */}
+        <div className="our-jounrey-list mobile">
+          {journeyList.map((item, index) => {
+            return (
+              <div className="journey-item-container" key={index}>
+                <h2 className="h2-text">{item.year}</h2>
+                <div className="journey-item">
+                  <h3 className="h3-text">{item.header}</h3>
+                  <p className="p-text">{item.content}</p>
+                </div>
+                <img
+                  src="aboutUs/journeyIcon.png"
+                  alt="journey icon"
+                  className="big-star-icon"
+                />
+                <img
+                  src="aboutUs/journeyIcon.png"
+                  alt="journey icon"
+                  className="big-star-icon2"
+                />
+                {index === 3 && <div className="pseudo-hider"></div>}
+              </div>
+            );
+          })}
+          <div className="pseudo-line"></div>
+        </div>
       </section>
 
       <section className="about-us-core-value-section">
@@ -233,6 +265,7 @@ export const AboutUs = () => {
           </h3>
           <p className="p-text">— John Smith, Founder of Positivus</p>
         </div>
+        <img src="aboutUs/quoteImgMobile.png" alt="quote image" className="quote-img-mobile" />
       </section>
 
       <section className="about-us-award-recognition-section">
@@ -273,7 +306,11 @@ export const AboutUs = () => {
           </p>
           <button className="button">Explore Careers</button>
         </div>
-        <img src="aboutUs/joinOurTeamImg.png" alt="join our team image" className="join-our-team-img" />
+        <img
+          src="aboutUs/joinOurTeamImg.png"
+          alt="join our team image"
+          className="join-our-team-img"
+        />
       </section>
     </div>
   );

@@ -1,5 +1,6 @@
 .serviceContainer {
   padding: 50px 7% 0 7%;
+  overflow: hidden;
 }
 
 /* intro */
@@ -9,6 +10,9 @@
   overflow: hidden;
   display: flex;
   padding: 30px;
+}
+.serviceIntroSectionImageMobile {
+  display: none;
 }
 .introContent {
   width: 60%;
@@ -30,6 +34,9 @@
   display: flex;
   padding: 5% 5% 5% 2%;
   gap: 5%;
+}
+.serachEngineSectionMobile {
+  display: none;
 }
 .serachEngineSection .icon {
   height: 60px;
@@ -55,6 +62,8 @@
   color: var(--dark);
   text-decoration: none;
 }
+
+/* how we work */
 .howWeWorkSection {
   margin: 100px 0;
 }
@@ -162,6 +171,9 @@
 .itemImg {
   padding-left: 20px;
 }
+.itemImgMobile {
+  display: none;
+}
 
 /* start seo */
 .startSeoSection {
@@ -191,4 +203,220 @@
 .startSeoSectionImg {
   width: 35%;
   padding-left: 5%;
+}
+.startSeoSectionImgMobile {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  /* intro */
+  .serviceIntroSection {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    border-radius: 0;
+  }
+  .serviceIntroSectionImage {
+    display: none;
+  }
+  .serviceIntroSectionImageMobile {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .introContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 5%;
+  }
+  .backImg {
+    margin: 30px 0;
+  }
+
+  /* search engine */
+  .serachEngineSection {
+    display: none;
+  }
+  .serachEngineSectionMobile {
+    display: flex;
+    background-color: var(--dark);
+    border-radius: 45px;
+    height: auto;
+    overflow: hidden;
+    gap: 10%;
+    padding: 10%;
+  }
+  .searchEngineImgContainer {
+    display: flex;
+    align-items: start;
+  }
+  .searchEngineImgContainer .icon {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .serachEngineSectionMobile .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .serachEngineSectionMobile h2:first-child {
+    color: var(--green);
+  }
+  .serachEngineSectionMobile h2,
+  .serachEngineSectionMobile p {
+    color: var(--white);
+  }
+  .serachEngineSectionMobile button {
+    width: 100%;
+    background-color: var(--white);
+    color: var(--black);
+    text-decoration: none;
+    padding: 20px;
+  }
+  /* how we work */
+  .howWeWorkSection {
+    margin: 50px 0;
+  }
+  .howWeWorkSection p {
+    width: 100%;
+    text-align: center;
+  }
+  .seoProcessList {
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .processItem {
+    display: flex;
+    align-items: start;
+    padding: 5%;
+  }
+  .processItem img {
+    width: auto;
+    height: 40px;
+  }
+  .processItem .itemContent p {
+    width: 100%;
+    text-align: start;
+  }
+  /* use cases */
+  .useCaseSection {
+    margin-bottom: 50px;
+  }
+  .useCaseSectionList {
+    background-color: white;
+    border-radius: 0;
+    justify-content: start;
+    align-items: start;
+    height: auto;
+    width: 100%;
+    padding-left: 0;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+  }
+  .useCaseItem {
+    background-color: var(--dark);
+    flex: 0 0 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    scroll-snap-align: start; /* Snap items into view */
+    box-sizing: border-box;
+    padding: 10%;
+    border-radius: 45px;
+  }
+
+  .useCaseItem h3,
+  .useCaseItem p {
+    color: var(--white);
+    width: 100%;
+    text-align: start;
+  }
+
+  /* other service */
+  .otherSerivceSection {
+    margin-bottom: 50px;
+  }
+  .otherSerivceSection p {
+    width: 100%;
+    text-align: center;
+  }
+  .otherServiceList {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+  }
+  .otherServiceItem {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 10px;
+    padding: 10%;
+  }
+  .itemText {
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+  }
+  .itemText h3 {
+    background-color: var(--white);
+    border-radius: 7px;
+    padding: 3px;
+  }
+  .itemText h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .itemImg {
+    display: none;
+  }
+  .itemImgMobile {
+    display: block;
+  }
+  /* start seo */
+  .startSeoSection {
+    margin-bottom: 50px;
+    padding: 10%;
+  }
+  .startSeoSectionContent {
+    width: 100%;
+    gap: 20px;
+  }
+  .startSeoSectionContent h3 {
+    padding-bottom: 20px;
+  }
+  .startSeoSectionContent button {
+    text-decoration: none;
+    background-color: var(--green);
+    color: var(--black);
+  }
+  .startSeoSectionImg {
+    display: none;
+  }
+  .startSeoSectionImgMobile {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .serachEngineSectionMobile button {
+    padding: 10px;
+  }
+  .processItem {
+    display: flex;
+    align-items: start;
+    padding: 10%;
+  }
 }

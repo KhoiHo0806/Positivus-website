@@ -83,6 +83,11 @@ export const Services = () => {
         />
         <div className={styles.introContent}>
           <h1 className="h1-text">Expert Digital Marketing Services</h1>
+          <img
+            src="service/introImgMobile.png"
+            alt="intro image"
+            className={styles.serviceIntroSectionImageMobile}
+          />
           <p className="p-text">
             Unlock your business's full potential with tailored strategies
             designed to drive growth and deliver results.
@@ -104,6 +109,28 @@ export const Services = () => {
         />
         <h2 className="section-header">Search engine optimization</h2>
         <div className={styles.content}>
+          <p className="p-text">
+            SEO is the process of improving your website's visibility on search
+            engines like Google. By optimizing your content and site structure,
+            we help your business rank higher in search results, driving more
+            organic traffic and potential customers.
+          </p>
+          <button className="button">Boost My Rankings</button>
+        </div>
+      </section>
+
+      <section className={styles.serachEngineSectionMobile}>
+        <div className={styles.seachEngineImgContainer}>
+          <img
+            src="service/searchEngineIcon.png"
+            alt="search engine icon"
+            className={styles.icon}
+          />
+        </div>
+
+        <div className={styles.content}>
+          <h2 className="h2-text">FEATURED</h2>
+          <h2 className="h2-text">Search engine optimization</h2>
           <p className="p-text">
             SEO is the process of improving your website's visibility on search
             engines like Google. By optimizing your content and site structure,
@@ -183,6 +210,11 @@ export const Services = () => {
               <div className={styles.otherServiceItem} key={index}>
                 <div className={styles.itemText}>
                   <h3 className="h3-text">{item.name}</h3>
+                  <img
+                    src={item.image}
+                    alt="service image"
+                    className={styles.itemImgMobile}
+                  />
                   <h4 className="h4-text">
                     <img
                       src="Home/services/learnMoreIcon1.png"
@@ -214,6 +246,11 @@ export const Services = () => {
           <h4 className="h4-text">
             Let's work together to grow your online presence.
           </h4>
+          <img
+          src="service/startSeoImg.png"
+          alt="section image"
+          className={styles.startSeoSectionImgMobile}
+        />
           <button className="button">Start My SEO Journey</button>
         </div>
         <img
