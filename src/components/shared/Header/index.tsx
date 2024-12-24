@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./header.css";
 import { NavLink } from "react-router-dom";
+import useAlert from "../../../customHook/useAlert";
 
 export const Header = () => {
   const [isShowMenu, setIsShowMenu] = useState(false);
@@ -9,10 +10,12 @@ export const Header = () => {
     setIsShowMenu(!isShowMenu);
   };
 
+  const alertHandler = useAlert()
+
   return (
     <header className="header-container">
       <NavLink to="/">
-        <img className="header-logo" src="logo.png" alt="Logo" />
+        <img className="header-logo" src="logo.png" alt="Logo" onClick={() => alertHandler("home")}/>
       </NavLink>
       <div className="nav-and-button">
         <nav>
@@ -85,6 +88,7 @@ export const Header = () => {
                       isActive ? "navigation-link active" : "navigation-link"
                     }
                     to="/about-us"
+                    onClick={()=> alertHandler("about us")}
                   >
                     About Us
                   </NavLink>
