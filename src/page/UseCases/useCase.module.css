@@ -14,6 +14,9 @@
 .introImage {
   width: 50%;
 }
+.introImageMobile {
+  display: none;
+}
 .introContent {
   width: 50%;
   padding: 5%;
@@ -23,6 +26,9 @@
 }
 
 /* feature section */
+.featuredSuccessSectionMobile {
+  display: none;
+}
 .featuredSuccessSection {
   margin-bottom: 100px;
   background-color: var(--dark);
@@ -172,4 +178,158 @@
 .createSuccessImg {
   width: 40%;
   height: 100%;
+}
+
+@media (max-width: 500px) {
+  /* intro */
+  .introImageMobile {
+    display: block !important;
+  }
+  .introImage {
+    display: none;
+  }
+  .introSection {
+    background-color: var(--white);
+    border-radius: 0px;
+    margin-bottom: 50px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .introImageMobile {
+    display: none;
+  }
+  .introContent {
+    width: 100%;
+    padding: 0;
+    gap: 30px;
+  }
+
+  /* feature success */
+  .featuredSuccessSectionMobile {
+    display: flex;
+    margin-bottom: 50px;
+    background-color: var(--dark);
+    border-radius: 45px;
+    padding: 10%;
+    gap: 10%;
+  }
+  .featuredSuccessSection {
+    display: none;
+  }
+  .featureSectionLeft {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: start;
+  }
+  .featureSectionLeft img {
+    transform: rotate(45deg);
+  }
+  .featureSectionRight h2 {
+    background-color: var(--dark);
+    color: var(--green);
+    text-align: start;
+    margin-top: 10px;
+  }
+  .featureSectionRight h3,
+  .featureSectionRight p {
+    color: var(--white);
+  }
+  .featureSectionleft h3,
+  .featureSectionleft p {
+    color: var(--white);
+  }
+  .featuredItem h3,
+  .featuredItem p {
+    color: var(--dark);
+  }
+  .featureSectionRight h4 {
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .featureSectionRight {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
+  }
+
+  /* success stories */
+  .successStorySection {
+    margin-bottom: 50px;
+  }
+  .successStorySection p {
+    width: 100%;
+    text-align: center;
+  }
+  .successStoriesList {
+    border: none;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  .successItem {
+    border: 1px solid black !important;
+    border-bottom-width: 5px !important;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 10% !important;
+  }
+  .successItem p {
+    text-align: start;
+  }
+
+  /* testinmonial */
+  .testinmonialsSection {
+    margin-bottom: 50px;
+  }
+  .testinmonialsSection p {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* create success story */
+  .createSuccessStorySection {
+    height: auto;
+    flex-direction: column;
+    padding: 10%;
+    justify-content: center;
+    gap: 10px;
+  }
+  .createSuccessContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    gap: 10px;
+  }
+  .createSuccessContent h3 {
+    text-align: center;
+  }
+  .createSuccessContent p {
+    width: 100%;
+    text-align: center;
+  }
+  .createSuccessContent button {
+    width: 100%;
+    text-decoration: none;
+  }
+  .createSuccessImg {
+    width: 100%;
+    height: auto;
+  }
 }

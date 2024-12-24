@@ -91,6 +91,11 @@ export const UseCases = () => {
         />
         <div className={styles.introContent}>
           <h1 className="h1-text">Proven Success Stories</h1>
+          <img
+            src="usecases/introImgMobile.png"
+            alt="intro section image"
+            className={styles.introImageMobile}
+          />
           <p className="p-text">
             See how our innovative digital marketing strategies have transformed
             businesses. Whether through SEO, PPC, social media, or web design,
@@ -125,6 +130,34 @@ export const UseCases = () => {
               </div>
             );
           })}
+        </div>
+      </section>
+      <section className={styles.featuredSuccessSectionMobile}>
+        <div className={styles.featureSectionLeft}>
+          <img src="service/searchEngineIcon.png" alt=" feture success icon" />
+        </div>
+        <div className={styles.featureSectionRight}>
+          <h2 className="section-header">Featured</h2>
+          <h3 className="h3-text">
+            Scaling Success for a Leading E-Commerce Brand
+          </h3>
+          <p className="p-text">
+            Through a comprehensive SEO and PPC strategy, we helped this
+            e-commerce brand increase visibility, drive traffic, and boost
+            sales.
+          </p>
+          {featuredSuccessList.map((item, index) => {
+            return (
+              <div className={styles.featuredItem} key={index}>
+                <h3 className="h3-text">{item.percent}</h3>
+                <p className="p-text">{item.content}</p>
+              </div>
+            );
+          })}
+          <h4 className="h4-text">
+            <img src="usecases/featureSuccessIcon.png" alt="Read icon" />
+            Read
+          </h4>
         </div>
       </section>
 

@@ -82,3 +82,7 @@
 .questionSection h2{
     width: 340px;
 }
+
+@media( max-width: 500px){
+  
+}
