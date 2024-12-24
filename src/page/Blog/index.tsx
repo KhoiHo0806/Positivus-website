@@ -51,6 +51,11 @@ export const Blog = () => {
           <h1 className="h1-text">
             PPC vs. Organic Marketing: Which One Is Right for Your Business?
           </h1>
+          <img
+          src="Home/intro/homeIntroImage.png"
+          alt="intro image"
+          className={styles.introImgMobile}
+        />
           <p className="p-text">
             PPC and organic marketing each offer unique benefits for driving
             traffic and growing your business. Discover which strategy aligns
@@ -191,6 +196,21 @@ export const Blog = () => {
                   but generates
                   <h3 className="h3-text" style={{ display: "inline" }}>
                     {" "}
+                    3x as many leads
+                  </h3>
+                </p>
+              </div>
+              <div className={`${styles.gridItem} ${styles.item3Mobile}`}>
+                <p className="p-text">
+                  Content marketing costs
+                  <h3 className="h3-text" >
+                    62% less than paid ads
+                  </h3>
+                </p>
+                <p className="p-text">
+                  but generates
+                  <h3 className="h3-text" >
+
                     3x as many leads
                   </h3>
                 </p>

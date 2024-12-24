@@ -48,12 +48,12 @@
 .pricingItem:nth-child(2) p {
   color: white;
 }
-.pricingItem:nth-child(2) h3{
-    display: flex;
-    justify-content: space-between;
+.pricingItem:nth-child(2) h3 {
+  display: flex;
+  justify-content: space-between;
 }
-.pricingItem:nth-child(2) .pricingItemButtons{
-    border-bottom: 2px solid var(--white);
+.pricingItem:nth-child(2) .pricingItemButtons {
+  border-bottom: 2px solid var(--white);
 }
 .pricingItem:nth-child(2) button:first-child {
   background-color: var(--green);
@@ -76,13 +76,48 @@
 }
 
 /* question */
-.questionSection{
-    margin: 100px 0;
+.questionSection {
+  margin: 100px 0;
 }
-.questionSection h2{
-    width: 340px;
+.questionSection h2 {
+  width: 340px;
 }
 
-@media( max-width: 500px){
-  
+@media (max-width: 500px) {
+  .pricingPageContainer {
+    margin: 50px 7%;
+  }
+  /* intro */
+  .pricingIntroSection p {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .inTroPriceList {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  .pricingItem {
+    width: 100%;
+    border: 1px solid black;
+    border-bottom-width: 5px;
+    padding: 10%;
+    gap: 20px;
+  }
+  .workingProcessItemLower1{
+    padding-top: 120px !important;
+  }
+
+  /* question */
+  .questionSection {
+    margin: 50px 0;
+  }
+  .questionSection h2 {
+    width: 100%;
+  }
+  .questionSection p:first-child {
+    font-size: 2.5rem;
+  }
 }

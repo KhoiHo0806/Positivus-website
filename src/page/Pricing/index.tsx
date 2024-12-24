@@ -150,7 +150,7 @@ export const Pricing = () => {
                 }}
               >
                 <div
-                  className="working-process-item"
+                  className={`working-process-item ${styles.workingProcessItem}`}
                   style={{
                     backgroundColor: expandIndexes.includes(index)
                       ? "#b9ff66"
@@ -174,7 +174,7 @@ export const Pricing = () => {
                       alt="working process icon"
                     />
                   </div>
-                  <p className="working-process-item-lower">{item.content}</p>
+                  <p className={`working-process-item-lower ${styles[`workingProcessItemLower${index + 1}`]}`}>{item.content}</p>
                 </div>
               </div>
             );
