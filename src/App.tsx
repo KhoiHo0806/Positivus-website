@@ -9,6 +9,7 @@ import { Pricing } from "./page/Pricing";
 import { Blog } from "./page/Blog";
 import { Footer } from "./components/shared/footer";
 
+
 const App = () => {
   return (
     <>

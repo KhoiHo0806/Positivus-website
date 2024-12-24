@@ -2,8 +2,14 @@ import "./home.css";
 import { useState, useRef, useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import { useDispatch, useSelector } from "react-redux";
+import { testReducer } from "../../redux/slice/testSlice";
 
 export const Home = () => {
+  const dispatch = useDispatch();
+  const value = useSelector((state: any) => state.test);
+  console.log("value: " + value);
+
   const servicesItemList = [
     {
       title: "Search engine optimization",
@@ -214,10 +220,9 @@ export const Home = () => {
         <div className="home-services-item-list">
           {servicesItemList.map((item, index) => {
             return (
-              <>
+              <div key={index}>
                 <div
                   className="home-services-item"
-                  key={index}
                   style={{ backgroundColor: `${item.background}` }}
                 >
                   <div className="home-services-item-left">
@@ -283,7 +288,7 @@ export const Home = () => {
                     />
                   </div>
                 </div>
-              </>
+              </div>
             );
           })}
         </div>
