@@ -15,7 +15,7 @@ export const Header = () => {
     (state: any) => state.pageCounter.pageCount[currentPage]
   );
 
-  console.log(useSelector((state: any) => state.test));
+  // console.log(useSelector((state: any) => state.test));
 
   const [isShowMenu, setIsShowMenu] = useState(false);
 
@@ -24,8 +24,9 @@ export const Header = () => {
   };
 
   useEffect(() => {
-    alert(`${currentPage} was visited ${visitNum} time(s)`);
-    console.log("useEffect alert")
+    if(visitNum > 0){
+      alert(`${currentPage} was visited ${visitNum} time(s)`);
+    }
   }, [currentPage, visitNum]);
 
   const alertHandler = (page: string) => {
