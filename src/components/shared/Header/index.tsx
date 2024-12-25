@@ -1,21 +1,46 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./header.css";
 import { NavLink } from "react-router-dom";
 import useAlert from "../../../customHook/useAlert";
+import { useDispatch, useSelector } from "react-redux";
+import { increasement } from "../../../redux/slice/counterSlice";
 
 export const Header = () => {
+  const dispatch = useDispatch();
+  const alert = useAlert();
+  const currentPage = useSelector(
+    (state: any) => state.pageCounter.currentPage
+  );
+  const visitNum = useSelector(
+    (state: any) => state.pageCounter.pageCount[currentPage]
+  );
+
+  console.log(useSelector((state: any) => state.test));
+
   const [isShowMenu, setIsShowMenu] = useState(false);
 
   const menuToggler = () => {
     setIsShowMenu(!isShowMenu);
   };
 
-  const alertHandler = useAlert()
+  useEffect(() => {
+    alert(`${currentPage} was visited ${visitNum} time(s)`);
+    console.log("useEffect alert")
+  }, [currentPage, visitNum]);
+
+  const alertHandler = (page: string) => {
+    dispatch(increasement(page));
+  };
 
   return (
     <header className="header-container">
       <NavLink to="/">
-        <img className="header-logo" src="logo.png" alt="Logo" onClick={() => alertHandler("home")}/>
+        <img
+          className="header-logo"
+          src="logo.png"
+          alt="Logo"
+          onClick={() => alertHandler("Home")}
+        />
       </NavLink>
       <div className="nav-and-button">
         <nav>
@@ -26,6 +51,7 @@ export const Header = () => {
                   isActive ? "navigation-link active" : "navigation-link"
                 }
                 to="/about-us"
+                onClick={() => alertHandler("About us")}
               >
                 About Us
               </NavLink>
@@ -36,6 +62,7 @@ export const Header = () => {
                   isActive ? "navigation-link active" : "navigation-link"
                 }
                 to="/services"
+                onClick={() => alertHandler("Services")}
               >
                 Services
               </NavLink>
@@ -88,7 +115,7 @@ export const Header = () => {
                       isActive ? "navigation-link active" : "navigation-link"
                     }
                     to="/about-us"
-                    onClick={()=> alertHandler("about us")}
+                    onClick={() => alertHandler("About us")}
                   >
                     About Us
                   </NavLink>
@@ -99,6 +126,7 @@ export const Header = () => {
                       isActive ? "navigation-link active" : "navigation-link"
                     }
                     to="/services"
+                    onClick={() => alertHandler("Services")}
                   >
                     Services
                   </NavLink>

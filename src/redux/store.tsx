@@ -4,7 +4,7 @@ import  testReducer  from "./slice/testSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    pageCounter: counterReducer,
     test: testReducer,
   },
 });

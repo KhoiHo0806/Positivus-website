@@ -1,27 +1,34 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, current, PayloadAction } from "@reduxjs/toolkit";
+
+export interface pageState {
+  [page: string]: number;
+}
 
 export interface counterState {
-  value: number;
-  page: "Home" | "About us" | "Services";
+  pageCount: pageState;
+  currentPage: string;
 }
 
 const initialState: counterState = {
-  value: 0,
-  page: "Home",
+  pageCount: {
+    Home: 0,
+    "About us": 0,
+    Services: 0,
+  },
+  currentPage: "Home",
 };
 
 export const counterSlice = createSlice({
   name: "counter",
   initialState,
   reducers: {
-    increasement: state =>{
-        state.value += 1
+    increasement: (state, action: PayloadAction<string>) => {
+      const page = action.payload;
+      state.pageCount[page] += 1;
+      state.currentPage = page;
     },
-    decreasement: state =>{
-        state.value -= 1
-    }
-  }
+  },
 });
 
-export const{increasement, decreasement} = counterSlice.actions
-export default counterSlice.reducer
+export const { increasement } = counterSlice.actions;
+export default counterSlice.reducer;

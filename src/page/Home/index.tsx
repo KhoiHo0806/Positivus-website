@@ -2,15 +2,11 @@ import "./home.css";
 import { useState, useRef, useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import { useDispatch, useSelector } from "react-redux";
-import { testReducer } from "../../redux/slice/testSlice";
+
 
 export const Home = () => {
-  const dispatch = useDispatch();
-  const value = useSelector((state: any) => state.test);
-  const counterValue = useSelector((state:any) => state.counter.page)
-  console.log("value: " + value);
-  console.log("counterValue: " + counterValue)
+ 
+ 
 
   const servicesItemList = [
     {

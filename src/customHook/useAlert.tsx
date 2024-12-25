@@ -1,8 +1,9 @@
 const useAlert = () => {
-  const showAlert = (alertValue: string) => {
-    alert(`This is ${alertValue} page`);
+  const showAlert = (message: string) => {
+    alert(message);
   };
   return showAlert;
 };
 
 export default useAlert;
+
